@@ -2,7 +2,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 import { NavLink } from 'react-router-dom'
-import '../../styles/ForgetPassword.css'
+import '../../Styles/ForgetPassword.css'
 
 const ForgetPassword = () => {
     const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm();
