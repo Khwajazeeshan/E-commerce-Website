@@ -1,0 +1,51 @@
+.store-detail-page006 {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    min-height: 94vh;
+}
+
+.store-detail-page006 h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.close-icon006 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.store-detail-table006 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.store-detail-table006 td {
+    padding: 25px;
+    border: 1px solid #ddd;
+    font-size: 20px;
+}
+
+.store-detail-table006 td:first-child {
+    font-weight: bold;
+}
+
+.store-detail-table006 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.store-detail-page006 .error-message006 {
+    color: red;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.store-detail-page006 p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #555;
+}

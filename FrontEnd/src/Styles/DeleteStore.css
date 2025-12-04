@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#delete-store-page007 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    position: relative;
+}
+
+#delete-store-container007 {
+    max-width: 500px;
+    width: 100%;
+    padding: 40px 65px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#close-icon007 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    color: #888;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#delete-store-title007 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#delete-store-form007 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the buttons horizontally */
+    width: 100%;
+}
+
+#delete-store-password007 {
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 15px;
+    border: 1px solid #5a5a5a;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+#delete-store-password007:focus {
+    border-color: #c32b2b;
+    outline: none;
+}
+
+#delete-store-button007 {
+    width: 100%; /* Make both buttons equal in width */
+    max-width: 300px; /* Optional: Set a max width for better responsiveness */
+    padding: 10px 20px;
+    background-color: rgb(192, 52, 52);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    margin-bottom: 10px; /* Add spacing between buttons */
+}
+
+#delete-store-button007:hover {
+    background-color: rgb(155, 42, 42);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#forget007 {
+    width: 100%; /* Make both buttons equal in width */
+    max-width: 300px; /* Optional: Set a max width for better responsiveness */
+    padding: 10px 75px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    margin-bottom: 10px; /* Add spacing between buttons */
+}
+
+#forget007:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#delete-store-error007 {
+    font-size: 14px;
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+    #delete-store-container007 {
+        padding: 10px;
+        margin: 20px;
+    }
+
+    #delete-store-title007 {
+        font-size: 20px;
+    }
+
+    #delete-store-password007,
+    #delete-store-button007 {
+        font-size: 14px;
+    }
+}

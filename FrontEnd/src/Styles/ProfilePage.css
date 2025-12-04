@@ -1,0 +1,131 @@
+.profile-page1001 {
+    padding: 20px;
+    max-width: 100vw;
+    background-color: #f9f9f9;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-icon001 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-table001 {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn001 1s ease-in-out;
+}
+
+.profile-table001 td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.profile-table001 td:first-child {
+    font-weight: bold;
+    padding-right: 10px;
+    font-size: 20px;
+    color: #343434;
+}
+
+.profile-table001 td:last-child {
+    text-align: left;
+    color: #3d3d3d;
+}
+
+.button-group11001 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.logout-button001,
+.delete-button001 {
+    width: 150px;
+    height: 45px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.logout-button001 {
+    background-color: #28a745;
+    color: white;
+}
+
+.logout-button001:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.delete-button001 {
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+}
+
+.delete-button001:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .profile-page1001 {
+        padding: 10px;
+    }
+
+    .button-group11001 {
+        flex-direction: column;
+    }
+
+    .profile-table001 {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .profile-table001 td {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 380px) {
+    .profile-table001 {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@keyframes fadeIn001 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

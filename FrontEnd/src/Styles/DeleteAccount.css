@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#delete-account-page002 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: relative;
+}
+
+#delete-account-container002 {
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: grid;
+    place-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#delete-account-container002:hover {
+    transform: scale(1.05);
+}
+
+#close-icon002 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#delete-account-title002 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+#delete-account-form002 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#delete-account-password002 {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #2e2e2e;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+    transition: border-color 0.3s;
+}
+
+#delete-account-password002:focus {
+    border-color: #ff7e5f;
+    outline: none;
+}
+
+#delete-account-button002, .forget-password-button002 {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 150px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#delete-account-button002 {
+    background-color: rgb(192, 52, 52);
+    color: white;
+}
+
+#delete-account-button002:hover {
+    background-color: rgb(155, 42, 42);
+    transform: scale(1.05);
+}
+
+.forget-password-button002 {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.forget-password-button002:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.error-message {
+    color: red;
+}
+
+@media (max-width: 600px) {
+    #delete-account-container002 {
+        padding: 20px;
+    }
+
+    #delete-account-title002 {
+        font-size: 22px;
+    }
+
+    #delete-account-password002, #delete-account-button002, .forget-password-button002 {
+        font-size: 14px;
+    }
+}

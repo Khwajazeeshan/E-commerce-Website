@@ -1,0 +1,117 @@
+.create-store-container0021 {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px 80px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.create-store-container0021 h2 {
+    margin-bottom: 50px;
+}
+
+.create-store-form0021 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.form-group0021 {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group0021 label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group0021 input,
+.form-group0021 textarea,
+.form-group0021 select {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-error0021 {
+    border-color: red;
+}
+
+.error-message0021 {
+    color: red;
+    font-size: 0.875em;
+}
+
+.success-message0021 {
+    color: green;
+    font-size: 1em;
+    text-align: center;
+}
+
+.submit-button0021 {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-button0021:hover {
+    background-color: #0056b3;
+}
+
+.close-icon0021 {
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media (max-width: 700px) {
+    .create-store-container0021 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form-group0021 input,
+    .form-group0021 textarea,
+    .form-group0021 select {
+        width: 80%;
+    }
+
+    .submit-button0021 {
+        width: 80%;
+    }
+}
+
+@media (min-width: 701px) {
+    .create-store-container0021 {
+        max-width: 800px;
+    }
+
+    .form-group0021 input,
+    .form-group0021 textarea,
+    .form-group0021 select {
+        width: 100%;
+    }
+}

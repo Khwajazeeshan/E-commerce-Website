@@ -1,0 +1,68 @@
+.close-icon005 {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.add-product-container005 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f2f5;
+    position: relative;
+    padding: 35px 55px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-product-container005 h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.add-product-container005 input {
+    width: 90%;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #747474;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.add-product-container005 input:focus {
+    border-color: #ce4040;
+    outline: none;
+}
+
+.add-product-container005 button {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.add-product-container005 button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.error-message005 {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}

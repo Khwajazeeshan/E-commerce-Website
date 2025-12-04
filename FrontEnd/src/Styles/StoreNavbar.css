@@ -1,0 +1,142 @@
+.navbar-container-new004 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2px;
+    background-color: #333;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.store-name-new004 h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.navbar-buttons-new004 {
+    display: none;
+}
+
+.navbar-button-new004 {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.navbar-button-new004:hover {
+    text-decoration: underline;
+}
+
+.menu-close-container1004 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-button-new004 {
+    display: block;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.menu-button-new004:hover {
+    color: #f1c40f;
+}
+
+.close-icon-new004 {
+    display: block;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.close-icon-new004:hover, .close-icon1004:hover {
+    color: #f1c40f;
+}
+
+.close-icon1004 {
+    display: block;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar-buttons-new004 {
+        display: none;
+    }
+}
+
+.sidebar-new004 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #444;
+    overflow-x: hidden;
+    transition: width 0.5s ease;
+    padding-top: 60px;
+    z-index: 1000; /* Increased z-index to ensure it appears above other elements */
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+}
+
+@media (min-width: 700px) {
+    .sidebar-new004.open {
+        width: 30%;
+    }
+}
+
+@media (max-width: 699px) {
+    .sidebar-new004.open {
+        width: 70%;
+    }
+}
+
+.sidebar-new004 a, .sidebar-new004 button {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: background-color 0.3s ease;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.sidebar-new004 a:hover, .sidebar-new004 button:hover {
+    background-color: #575757;
+    color: #f1c40f;
+}
+
+.sidebar-new004 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+

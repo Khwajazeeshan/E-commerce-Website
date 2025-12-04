@@ -1,0 +1,42 @@
+.store-footer {
+    position: relative;
+    /* Default position */
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    /* Assuming the navbar background color is #333 */
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: auto; /* Push footer to the bottom when content overflows */
+}
+
+.store-footer.fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Ensure it stays at the bottom when fixed */
+    z-index: 10;
+}
+
+.store-footer p {
+    margin: 0;
+    color: #fff;
+    /* Change text color to white */
+    font-size: 1.2em;
+    /* Increase font size */
+}
+
+/* Ensure the footer is always at the bottom of the page */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#root {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}

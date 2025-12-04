@@ -1,0 +1,122 @@
+.my-order-container0018 {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.my-order-container0018 h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.error-message0018 {
+    color: red;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.order-list0018 {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.order-item0018 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.order-item0018:hover {
+    transform: translateY(-5px);
+}
+
+.order-image0018 {
+    width: 40%;
+    height: 100%;
+    object-fit: contain;
+    border-right: 1px solid #ddd;
+    margin: 10px 4px;
+}
+
+.order-details0018 {
+    width: 60%;
+    padding: 15px;
+    text-align: left;
+}
+
+.order-details0018 h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.order-details0018 p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.order-details0018 p strong {
+    color: #333;
+}
+
+.order-details0018 p:last-child {
+    font-weight: bold;
+    color: #000;
+}
+
+.my-order-header0018 {
+    background-image: url('/path/to/your/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.my-order-header0018 h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.my-order-header0018 p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+@media (max-width: 500px) {
+    .order-item0018 {
+        flex-direction: column;
+    }
+
+    .order-image0018 {
+        width: 100%;
+        height: auto;
+        border-right: none; 
+        border-bottom: 1px solid #ddd; 
+        margin:  10px;
+    }
+
+    .order-details0018 {
+        width: 100%;
+        padding: 10px;
+        margin-left: 10px;
+    }
+}
