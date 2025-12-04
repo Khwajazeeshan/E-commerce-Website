@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { NavLink } from 'react-router-dom';
-import '../../styles/Login.css';
+import '../../Styles/Login.css';
 
 const Login = () => {
     const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm();
