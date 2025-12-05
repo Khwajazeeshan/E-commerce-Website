@@ -30,12 +30,12 @@ const ForgetPassword = () => {
                 <h1 className='forget-password-title003'>Forget Password</h1>
                 <form onSubmit={handleSubmit(onSubmit)} className="forget-password-form003">
                     <input type="email" placeholder='Enter Email'
-                        {...register("email", { required: { value: true, message: "Please Enter Email" } })} 
+                        {...register("email", { required: { value: true, message: "Please Enter Email" } })}
                         className="forget-password-input003"
                     />
                     {errors.email && <p className="error-message003">{errors.email.message}</p>}
                     <input type="password" placeholder='Enter New Password'
-                        {...register("password", { required: { value: true, message: "Please Enter New Password" }, minLength: { value: 8, message: "Min-Length is 8" } })} 
+                        {...register("password", { required: { value: true, message: "Please Enter New Password" }, minLength: { value: 8, message: "Min-Length is 8" } })}
                         className="forget-password-input003"
                     />
                     {errors.password && <p className="error-message003">{errors.password.message}</p>}

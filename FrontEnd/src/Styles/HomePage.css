@@ -1,9 +1,24 @@
+/* ========================================
+   HOMEPAGE LAYOUT
+   ======================================== */
+
 .homepage-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: var(--bg-secondary);
 }
 
-.homepage-container > div:last-child {
+.navbar-sidebar-container {
+    position: relative;
+    z-index: var(--z-fixed);
+}
+
+.homepage-container>div:last-child {
     margin-top: auto;
+}
+
+/* Smooth page transitions */
+.homepage-container>* {
+    animation: fadeIn 0.5s ease-out;
 }

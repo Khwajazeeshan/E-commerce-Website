@@ -29,12 +29,12 @@ const Signup = () => {
     };
 
     return (
-        <div className="signup-container0020">
-            <NavLink to="/" className="close-icon0020">
+        <div className="signup-container0002">
+            <NavLink to="/" className="close-icon0002">
                 <span className="material-symbols-outlined">close</span>
             </NavLink>
-            <div className="signup-card0020">
-                <h1 className="signup-header0020">Sign-up Page</h1>
+            <div className="signup-card0002">
+                <h1 className="signup-header0002">Sign-up Page</h1>
                 <form className="signup-form0020" onSubmit={handleSubmit(onSubmit)}>
                     <input type="text" placeholder='Enter Name' className="signup-input0020"
                         {...register("first", { required: "Name is required", minLength: { value: 5, message: "Min-Length is 5" } })} />

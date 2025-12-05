@@ -1,123 +1,304 @@
-body {
-    font-family: Arial, sans-serif;
-}
+/* ========================================
+   DELETE STORE PAGE - MODERN DESIGN
+   ======================================== */
 
 #delete-store-page007 {
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f2f5;
+    justify-content: center;
+    padding: var(--spacing-xl);
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
     position: relative;
+    overflow: hidden;
+    animation: fadeIn var(--transition-slow) ease-out;
 }
 
-#delete-store-container007 {
-    max-width: 500px;
-    width: 100%;
-    padding: 40px 65px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+#delete-store-page007::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: backgroundMove 20s linear infinite;
+}
+
+@keyframes backgroundMove {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 #close-icon007 {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    text-decoration: none;
-    color: #888;
-    font-size: 1.5em;
+    top: var(--spacing-xl);
+    right: var(--spacing-xl);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    color: var(--text-primary);
     cursor: pointer;
+    transition: all var(--transition-base);
+    z-index: 10;
+    box-shadow: var(--shadow-md);
+}
+
+#close-icon007:hover {
+    background: var(--bg-primary);
+    transform: rotate(90deg) scale(1.1);
+    box-shadow: var(--shadow-lg);
+}
+
+#close-icon007 .material-symbols-outlined {
+    font-size: 28px;
+}
+
+.close-icon007 {
+    position: absolute;
+    top: var(--spacing-xl);
+    right: var(--spacing-xl);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    z-index: 10;
+    box-shadow: var(--shadow-md);
+}
+
+.close-icon007:hover {
+    background: var(--bg-primary);
+    transform: rotate(90deg) scale(1.1);
+    box-shadow: var(--shadow-lg);
+}
+
+.close-icon007 .material-symbols-outlined {
+    font-size: 28px;
+}
+
+#delete-store-container007 {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-2xl);
+    padding: var(--spacing-3xl);
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    z-index: 1;
+    animation: scaleIn 0.6s ease-out;
+}
+
+#delete-store-container007::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
 }
 
 #delete-store-title007 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #333;
+    font-family: var(--font-heading);
+    font-size: var(--text-3xl);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 #delete-store-form007 {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the buttons horizontally */
-    width: 100%;
+    gap: var(--spacing-lg);
 }
 
 #delete-store-password007 {
-    width: 100%;
-    padding: 12px 5px;
-    margin-bottom: 15px;
-    border: 1px solid #5a5a5a;
-    border-radius: 10px;
-    font-size: 1em;
-    transition: border-color 0.3s;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    font-size: var(--text-base);
+    font-family: var(--font-primary);
+    transition: all var(--transition-base);
+    background: var(--bg-primary);
 }
 
 #delete-store-password007:focus {
-    border-color: #c32b2b;
     outline: none;
-}
-
-#delete-store-button007 {
-    width: 100%; /* Make both buttons equal in width */
-    max-width: 300px; /* Optional: Set a max width for better responsiveness */
-    padding: 10px 20px;
-    background-color: rgb(192, 52, 52);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: background-color 0.3s;
-    margin-bottom: 10px; /* Add spacing between buttons */
-}
-
-#delete-store-button007:hover {
-    background-color: rgb(155, 42, 42);
+    border-color: #ff6b6b;
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
     transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-#forget007 {
-    width: 100%; /* Make both buttons equal in width */
-    max-width: 300px; /* Optional: Set a max width for better responsiveness */
-    padding: 10px 75px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: background-color 0.3s;
-    margin-bottom: 10px; /* Add spacing between buttons */
-}
-
-#forget007:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 #delete-store-error007 {
-    font-size: 14px;
-    color: red;
-    margin-top: -10px;
-    margin-bottom: 18px;
+    color: var(--error-color);
+    font-size: var(--text-sm);
+    margin-top: -8px;
 }
 
-@media (max-width: 600px) {
+#delete-store-button007 {
+    padding: var(--spacing-md) var(--spacing-xl);
+    border: none;
+    border-radius: var(--radius-lg);
+    font-family: var(--font-primary);
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--text-white);
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    margin-top: var(--spacing-md);
+    position: relative;
+    overflow: hidden;
+}
+
+#delete-store-button007::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+#delete-store-button007:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-xl);
+}
+
+#delete-store-button007:hover::before {
+    left: 100%;
+}
+
+#delete-store-button007:active {
+    transform: translateY(-1px);
+}
+
+#forget007 {
+    padding: var(--spacing-md) var(--spacing-xl);
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    border-radius: var(--radius-lg);
+    font-family: var(--font-primary);
+    font-size: var(--text-lg);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+#forget007:hover {
+    background: var(--primary-gradient);
+    color: var(--text-white);
+    border-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+    #delete-store-page007 {
+        padding: var(--spacing-md);
+    }
+
+    #close-icon007,
+    .close-icon007 {
+        top: var(--spacing-md);
+        right: var(--spacing-md);
+        width: 40px;
+        height: 40px;
+    }
+
+    #close-icon007 .material-symbols-outlined,
+    .close-icon007 .material-symbols-outlined {
+        font-size: 24px;
+    }
+
     #delete-store-container007 {
-        padding: 10px;
-        margin: 20px;
+        padding: var(--spacing-2xl);
     }
 
     #delete-store-title007 {
+        font-size: var(--text-2xl);
+    }
+}
+
+@media (max-width: 480px) {
+    #delete-store-page007 {
+        padding: var(--spacing-sm);
+    }
+
+    #close-icon007,
+    .close-icon007 {
+        width: 36px;
+        height: 36px;
+    }
+
+    #close-icon007 .material-symbols-outlined,
+    .close-icon007 .material-symbols-outlined {
         font-size: 20px;
     }
 
-    #delete-store-password007,
-    #delete-store-button007 {
-        font-size: 14px;
+    #delete-store-container007 {
+        padding: var(--spacing-xl);
+    }
+
+    #delete-store-title007 {
+        font-size: var(--text-xl);
+    }
+
+    #delete-store-button007,
+    #forget007 {
+        padding: var(--spacing-sm) var(--spacing-lg);
+        font-size: var(--text-base);
     }
 }
